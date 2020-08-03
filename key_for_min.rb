@@ -10,8 +10,10 @@ def key_for_min_value(name_hash)
   while i < (arr.length-1)
     if arr[i] < arr[i+1]
       arr[i+1].pop
+      i += 1 
     else
       arr[i].pop
+      i += 1 
     end
   end
   puts arr.inspect
