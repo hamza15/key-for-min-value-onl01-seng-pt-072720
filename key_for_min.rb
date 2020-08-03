@@ -7,14 +7,15 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     if small_value == nil
       small_value = value 
-            small_key = key
-        elsif
-            value < small_value
-            small_value = value 
-            small_key = key  
-        end 
+      small_key = key
+    elsif
+      value < small_value
+      small_value = value 
+      small_key = key  
     end 
+  end 
     small_key
+end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
 key_for_min_value(ikea)
