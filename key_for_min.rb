@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   i = 0 
   while i < (arr.length-1)
     if arr[i] < arr[i+1]
-      arr.delete_at(arr.index[i+1])
+      arr.delete_at(arr[i+1])
       i += 1 
     else
       arr[i].pop
