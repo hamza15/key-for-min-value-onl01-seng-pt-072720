@@ -6,7 +6,14 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
     arr.push(value)
   end
-  puts arr.inspect
+  i = 0 
+  while i < (arr.length -1)
+    if arr[i] < arr[i+1]
+      arr[i+1].pop
+    else
+      arr[i].pop
+    end
+  end
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
