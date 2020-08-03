@@ -6,6 +6,7 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
     arr.push(value)
   end
+  puts arr
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
