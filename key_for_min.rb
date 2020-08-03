@@ -14,6 +14,7 @@ def key_for_min_value(name_hash)
       arr[i].pop
     end
   end
+  puts arr.inspect
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
